@@ -149,6 +149,22 @@ header .banner-content button {
   nav .show {
     display: flex;
   }
+  header {
+    background-size: contain;
+  }
+  header .banner-content h4 {
+    font-size: smaller;
+  }
+  header .banner-content h1 {
+    font-size: medium;
+  }
+  header .banner-content p {
+    font-size: 0.6rem;
+  }
+  header .banner-content button {
+    padding: 0.5rem;
+    font-size: 0.6rem;
+  }
 }
 @media screen and (max-width: 750px) {
   nav {
