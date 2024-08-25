@@ -8,7 +8,7 @@
 
 /* Navbar */
 nav {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
@@ -16,4 +16,24 @@ nav {
   padding: 10px 50px;
   background-color: rgb(18, 9, 49);
   color: white;
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .logo {
+      display: flex;
+      gap: 3px;
+    }
+    .map {
+      display: flex;
+      align-items: end;
+      i {
+        font-size: x-large;
+        color: white;
+      }
+      p {
+        font-size: small;
+      }
+    }
+  }
 }
