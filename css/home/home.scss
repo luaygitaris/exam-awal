@@ -112,6 +112,76 @@ header {
     }
   }
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  .our-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0 15px;
+    .product-content {
+      display: flex;
+      flex-direction: column;
+      background-color: #eee;
+      position: relative;
+      padding: 0 10px;
+      img {
+        width: 95%;
+      }
+      .product-about {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem 0 2rem 1rem;
+      }
+    }
+    .cart {
+      display: none;
+      .cart-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 7;
+        background-color: #3a3a3a;
+        opacity: 73%;
+      }
+      button {
+        background-color: white;
+        padding: 0.5rem 1.5rem;
+        border: none;
+        color: #b88e2f;
+      }
+      .share {
+        display: flex;
+        gap: 1rem;
+        color: white;
+      }
+    }
+    .show {
+      display: block;
+    }
+  }
+}
+
+.product button {
+  color: #b88e2f;
+  border: 1px solid #b88e2f;
+  padding: 0.5rem 3rem;
+  font-weight: bold;
+}
 
 // Responsive untuk IPAD
 @media screen and (max-width: 1000px) and (min-width: 751px) {
@@ -151,7 +221,7 @@ header {
   header {
     background-size: contain;
     height: 400px;
-    
+
     .banner-content {
       h4 {
         font-size: small;
@@ -231,49 +301,48 @@ header {
   header {
     background-size: contain;
     .banner-content {
-        width: 55%;
-        gap: 5px;
-        padding: 10px;
-        h4 {
-            font-size: smaller;
-        }
-        h1 {
-            font-size: small;
-        }
-        p {
-            font-size: 10px;
-        }
-        button {
-            padding: .3rem;
-            font-size: 10px;
-        }
+      width: 55%;
+      gap: 5px;
+      padding: 10px;
+      h4 {
+        font-size: smaller;
+      }
+      h1 {
+        font-size: small;
+      }
+      p {
+        font-size: 10px;
+      }
+      button {
+        padding: 0.3rem;
+        font-size: 10px;
+      }
     }
   }
 }
 
 @media screen and (max-width: 500px) {
-    header {
+  header {
     background-size: contain;
     .banner-content {
-        width: 55%;
-        gap: 5px;
-        padding: 10px;
-        top: 5px;
-        right: 15px;
-        h4 {
-            font-size: 10px;
-        }
-        h1 {
-            font-size: 12px;
-        }
-        p {
-            font-size: 8px;
-        }
-        button {
-            padding: .3rem;
-            font-size: 8px;
-        }
+      width: 55%;
+      gap: 5px;
+      padding: 10px;
+      top: 5px;
+      right: 15px;
+      h4 {
+        font-size: 10px;
+      }
+      h1 {
+        font-size: 12px;
+      }
+      p {
+        font-size: 8px;
+      }
+      button {
+        padding: 0.3rem;
+        font-size: 8px;
+      }
     }
   }
 }
-
