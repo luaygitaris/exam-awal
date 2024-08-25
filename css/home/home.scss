@@ -87,6 +87,33 @@ header {
   height: 550px;
   width: 100%;
   position: relative;
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: Poppins;
+    padding: 15px 50px;
+    position: absolute;
+    z-index: 3;
+    top: 5rem;
+    right: 5rem;
+    background-color: #fff3e3;
+    h1 {
+      width: 55%;
+      color: #b88e2f;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 0.875rem;
+    }
+    button {
+      padding: 1rem;
+      width: 30%;
+      background-color: #b88e2f;
+      border: none;
+      color: white;
+    }
+  }
 }
 
 // Responsive untuk IPAD
