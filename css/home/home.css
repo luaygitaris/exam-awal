@@ -16,6 +16,15 @@ nav {
   padding: 10px 50px;
   background-color: rgb(18, 9, 49);
   color: white;
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .logo {
+      display: flex;
+      gap: 3px;
+    }
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
