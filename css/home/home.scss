@@ -234,6 +234,7 @@ header {
     .banner-content {
         width: 55%;
         gap: 5px;
+        padding: 10px;
         h4 {
             font-size: smaller;
         }
@@ -250,3 +251,30 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+    header {
+    background-size: contain;
+    .banner-content {
+        width: 55%;
+        gap: 5px;
+        padding: 10px;
+        top: 5px;
+        right: 15px;
+        h4 {
+            font-size: 10px;
+        }
+        h1 {
+            font-size: 12px;
+        }
+        p {
+            font-size: 8px;
+        }
+        button {
+            padding: .3rem;
+            font-size: 8px;
+        }
+    }
+  }
+}
+
