@@ -153,7 +153,7 @@ header .banner-content button {
     background-size: contain;
   }
   header .banner-content h4 {
-    font-size: smaller;
+    font-size: small;
   }
   header .banner-content h1 {
     font-size: medium;
@@ -220,6 +220,26 @@ header .banner-content button {
   }
   nav .show {
     display: flex;
+  }
+  header {
+    background-size: contain;
+  }
+  header .banner-content {
+    width: 55%;
+    gap: 5px;
+  }
+  header .banner-content h4 {
+    font-size: smaller;
+  }
+  header .banner-content h1 {
+    font-size: small;
+  }
+  header .banner-content p {
+    font-size: 10px;
+  }
+  header .banner-content button {
+    padding: 0.3rem;
+    font-size: 10px;
   }
 }
 

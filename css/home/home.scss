@@ -155,7 +155,7 @@ header {
     background-size: contain;
     .banner-content {
       h4 {
-        font-size: smaller;
+        font-size: small;
       }
       h1 {
         font-size: medium;
@@ -227,6 +227,26 @@ header {
     }
     .show {
       display: flex;
+    }
+  }
+  header {
+    background-size: contain;
+    .banner-content {
+        width: 55%;
+        gap: 5px;
+        h4 {
+            font-size: smaller;
+        }
+        h1 {
+            font-size: small;
+        }
+        p {
+            font-size: 10px;
+        }
+        button {
+            padding: .3rem;
+            font-size: 10px;
+        }
     }
   }
 }
