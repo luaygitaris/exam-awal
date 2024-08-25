@@ -79,6 +79,15 @@ nav {
     }
   }
 }
+header {
+  background-image: url("../../img/scandinavian-interior-mockup-wall-decal-background\ 1.png");
+  background-size: cover;
+  background-blend-mode: 0.5;
+  background-repeat: no-repeat;
+  height: 550px;
+  width: 100%;
+  position: relative;
+}
 
 // Responsive untuk IPAD
 @media screen and (max-width: 1000px) and (min-width: 751px) {
@@ -86,13 +95,13 @@ nav {
     padding: 10px;
     gap: 10px;
     .nav-left {
-        .logo {
-          display: block;
-          font-size: 10px;
-        }
-        .search {
-          display: flex;
-        }
+      .logo {
+        display: block;
+        font-size: 10px;
+      }
+      .search {
+        display: flex;
+      }
     }
     .list {
       display: none;
@@ -123,14 +132,14 @@ nav {
     padding: 10px;
     gap: 10px;
     .nav-left {
-        .logo {
-          display: block;
-          font-size: 10px;
-        }
-        .map i,
-        .map h3 {
-          font-size: medium;
-        }
+      .logo {
+        display: block;
+        font-size: 10px;
+      }
+      .map i,
+      .map h3 {
+        font-size: medium;
+      }
     }
     .search {
       display: none;

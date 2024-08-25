@@ -80,6 +80,16 @@ nav .hamburger .bar {
   margin: 3px;
 }
 
+header {
+  background-image: url("../../img/scandinavian-interior-mockup-wall-decal-background 1.png");
+  background-size: cover;
+  background-blend-mode: 0.5;
+  background-repeat: no-repeat;
+  height: 550px;
+  width: 100%;
+  position: relative;
+}
+
 @media screen and (max-width: 1000px) and (min-width: 751px) {
   nav {
     padding: 10px;
