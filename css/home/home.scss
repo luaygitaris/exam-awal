@@ -79,3 +79,40 @@ nav {
     }
   }
 }
+
+// Responsive untuk IPAD
+@media screen and (max-width: 1000px) and (min-width: 751px) {
+  nav {
+    padding: 10px;
+    gap: 10px;
+    .nav-left {
+        .logo {
+          display: block;
+          font-size: 10px;
+        }
+        .search {
+          display: flex;
+        }
+    }
+    .list {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0px;
+      padding: 10px 30px;
+      border-radius: 10px;
+      z-index: 1;
+      background-color: rgb(18, 9, 49);
+      ul {
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+    .hamburger {
+      display: flex;
+    }
+    .show {
+      display: flex;
+    }
+  }
+}

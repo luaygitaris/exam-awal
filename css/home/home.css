@@ -80,4 +80,38 @@ nav .hamburger .bar {
   margin: 3px;
 }
 
+@media screen and (max-width: 1000px) and (min-width: 751px) {
+  nav {
+    padding: 10px;
+    gap: 10px;
+  }
+  nav .nav-left .logo {
+    display: block;
+    font-size: 10px;
+  }
+  nav .nav-left .search {
+    display: flex;
+  }
+  nav .list {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: rgb(18, 9, 49);
+  }
+  nav .list ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+  nav .hamburger {
+    display: flex;
+  }
+  nav .show {
+    display: flex;
+  }
+}
+
 /*# sourceMappingURL=home.css.map */
