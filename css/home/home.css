@@ -113,5 +113,61 @@ nav .hamburger .bar {
     display: flex;
   }
 }
+@media screen and (max-width: 750px) {
+  nav {
+    padding: 10px;
+    gap: 10px;
+  }
+  nav .nav-left .logo {
+    display: block;
+    font-size: 10px;
+  }
+  nav .nav-left .map i,
+  nav .nav-left .map h3 {
+    font-size: medium;
+  }
+  nav .search {
+    display: none;
+    top: 50px;
+    right: 0px;
+    padding: 10px;
+    z-index: 1;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(18, 9, 49);
+  }
+  nav .search #short-by {
+    width: 80px;
+    height: 20px;
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+  nav .search input {
+    width: 80px;
+    font-size: 10px;
+    height: 20px;
+  }
+  nav .list {
+    position: absolute;
+    display: none;
+    top: 110px;
+    right: 0px;
+    font-size: 10px;
+    z-index: 1;
+    padding: 10px 35px;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(18, 9, 49);
+  }
+  nav .list ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+  nav .hamburger {
+    display: flex;
+  }
+  nav .show {
+    display: flex;
+  }
+}
 
 /*# sourceMappingURL=home.css.map */
