@@ -12,6 +12,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   position: sticky;
+  top: 0;
   z-index: 9999;
   padding: 10px 50px;
   background-color: rgb(18, 9, 49);
@@ -80,24 +81,20 @@ nav {
   }
 }
 header {
-  background-image: url("../../img/scandinavian-interior-mockup-wall-decal-background\ 1.png");
-  background-size: cover;
-  background-blend-mode: 0.5;
-  background-repeat: no-repeat;
-  height: 550px;
-  width: 100%;
   position: relative;
+  img {
+    width: 100%;
+  }
   .banner-content {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    font-family: Poppins;
-    padding: 15px 50px;
     position: absolute;
-    z-index: 3;
     top: 5rem;
     right: 5rem;
     background-color: #fff3e3;
+    padding: 15px 50px;
+    width: fit-content;
     h1 {
       width: 55%;
       color: #b88e2f;
@@ -153,6 +150,8 @@ header {
   }
   header {
     background-size: contain;
+    height: 400px;
+    
     .banner-content {
       h4 {
         font-size: small;
