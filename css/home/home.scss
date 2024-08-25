@@ -65,4 +65,17 @@ nav {
       color: white;
     }
   }
+  .hamburger {
+    width: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    .bar {
+      width: 20px;
+      height: 2px;
+      background-color: white;
+      margin: 3px;
+    }
+  }
 }

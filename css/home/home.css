@@ -66,5 +66,18 @@ nav .account {
 nav .account i {
   color: white;
 }
+nav .hamburger {
+  width: auto;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+nav .hamburger .bar {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin: 3px;
+}
 
 /*# sourceMappingURL=home.css.map */
