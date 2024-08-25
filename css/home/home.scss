@@ -36,4 +36,17 @@ nav {
       }
     }
   }
+  .search {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    select,
+    input {
+      height: 30px;
+      padding: 0 10px;
+    }
+    input {
+      width: 300px;
+    }
+  }
 }

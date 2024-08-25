@@ -37,5 +37,18 @@ nav .nav-left .map i {
 nav .nav-left .map p {
   font-size: small;
 }
+nav .search {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+nav .search select,
+nav .search input {
+  height: 30px;
+  padding: 0 10px;
+}
+nav .search input {
+  width: 300px;
+}
 
 /*# sourceMappingURL=home.css.map */
