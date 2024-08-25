@@ -7,5 +7,15 @@
 }
 
 /* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 9999;
+  padding: 10px 50px;
+  background-color: rgb(18, 9, 49);
+  color: white;
+}
 
 /*# sourceMappingURL=home.css.map */
