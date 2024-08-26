@@ -231,6 +231,43 @@ header .whychoose-dua-tiga button {
   display: flex;
 }
 
+footer {
+  background-color: #eee;
+  padding-bottom: 50px;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  border-top: 3px solid #eee;
+  padding-top: 90px;
+}
+footer .footer-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+footer .footer-container div .address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+footer .footer-container ul {
+  list-style-type: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-atas-kanan {
+  display: flex;
+  gap: 10px;
+  color: black;
+}
+footer .footer-atas-kanan a {
+  color: black;
+}
+
 @media screen and (max-width: 1000px) and (min-width: 751px) {
   nav {
     padding: 10px;
