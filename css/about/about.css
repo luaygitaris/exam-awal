@@ -91,6 +91,61 @@ nav .hamburger .bar {
   margin: 3px;
 }
 
+header {
+  padding: 50px;
+}
+header .whychoose-dua {
+  padding: 10px;
+}
+header .whychoose-dua .whychoose-dua-satu h1 {
+  letter-spacing: 1.4px;
+  line-height: 30px;
+  color: var(--coklat);
+  padding-bottom: 30px;
+}
+header .whychoose-dua .whychoose-dua-satu p {
+  font-size: 13px;
+  color: #727272;
+}
+header .whychoose-dua .whychoose-dua-dua {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+header .whychoose-dua .whychoose-dua-dua div {
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+header .whychoose-dua .whychoose-dua-dua div h3 {
+  padding: 10px;
+  color: var(--coklat);
+}
+header .whychoose-dua .whychoose-dua-dua div p {
+  font-size: 13px;
+  letter-spacing: 0%;
+  color: #727272;
+  line-height: 18px;
+  text-align: justify;
+}
+header .whychoose-dua-tiga {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+header .whychoose-dua-tiga button {
+  background-color: var(--coklatmuda);
+  padding: 15px 15px;
+  border-radius: 999px;
+  border: 1px solid var(--coklatmuda);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1000px) and (min-width: 751px) {
   nav {
     padding: 10px;
