@@ -5,7 +5,11 @@
   font-family: "Poppins", sans-serif;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+:root {
+  --coklatmuda: #faf3ea;
+  --coklat: #b88e2f;
+  --abu: #eee;
+}
 /* Navbar */
 nav {
   display: flex;
@@ -15,8 +19,7 @@ nav {
   top: 0;
   z-index: 9999;
   padding: 10px 50px;
-  background-color: rgb(18, 9, 49);
-  color: white;
+  background-color: var(--coklatmuda);
   .nav-left {
     display: flex;
     align-items: center;
@@ -30,7 +33,7 @@ nav {
       align-items: end;
       i {
         font-size: x-large;
-        color: white;
+        color: black;
       }
       p {
         font-size: small;
@@ -63,7 +66,7 @@ nav {
     gap: 20px;
     font-size: x-large;
     i {
-      color: white;
+      color: black;
     }
   }
   .hamburger {
@@ -75,7 +78,7 @@ nav {
     .bar {
       width: 20px;
       height: 2px;
-      background-color: white;
+      background-color: black;
       margin: 3px;
     }
   }
@@ -109,6 +112,7 @@ header {
       background-color: #b88e2f;
       border: none;
       color: white;
+      cursor: pointer;
     }
   }
 }
@@ -116,13 +120,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px 0;
   gap: 1.5rem;
   width: 100%;
   .our-product {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    gap: 30px;
+    gap: 10px;
     padding: 0 15px;
     .product-content {
       display: flex;
@@ -131,14 +136,42 @@ main {
       position: relative;
       padding: 0 10px;
       img {
-        width: 95%;
+        width: 280px;
+        height: 300px;
       }
       .product-about {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        height: 110px;
         padding: 1rem 0 2rem 1rem;
+        width: 280px;
       }
+      .harga {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0 2rem 1rem;
+        del {
+          text-decoration: line-through red 2px;
+        }
+      }
+      .disc {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        z-index: 19;
+        background-color: var(--coklat);
+        color: white;
+        width: fit-content;
+        padding: 7px 3px;
+        border-radius: 999px;
+      }
+      .disc:hover {
+        color: red;
+      }
+    }
+    .product-content:hover .cart {
+      display: block;
     }
     .cart {
       display: none;
@@ -174,13 +207,13 @@ main {
       display: block;
     }
   }
-}
-
-.product button {
-  color: #b88e2f;
-  border: 1px solid #b88e2f;
-  padding: 0.5rem 3rem;
-  font-weight: bold;
+  button {
+    color: #b88e2f;
+    border: 1px solid #b88e2f;
+    padding: 0.5rem 3rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
 }
 
 // Responsive untuk IPAD
@@ -205,7 +238,7 @@ main {
       padding: 10px 30px;
       border-radius: 10px;
       z-index: 1;
-      background-color: rgb(18, 9, 49);
+      background-color: var(--coklatmuda);
       ul {
         flex-direction: column;
         gap: 5px;
@@ -238,6 +271,56 @@ main {
       }
     }
   }
+  main {
+    h1 {
+      font-size: large;
+    }
+    .our-product {
+      .product-content {
+        img {
+          width: 200px;
+          height: 230px;
+        }
+        .product-about {
+          width: 167px;
+          h3 {
+            font-size: large;
+          }
+          p {
+            font-size: small;
+          }
+        }
+        .harga {
+          del {
+            h4 {
+              font-size: small;
+            }
+          }
+          h4 {
+            font-size: small;
+          }
+        }
+      }
+      .cart {
+        display: block;
+        .cart-content {
+          background-color: transparent;
+          button {
+            display: block;
+          }
+          .share {
+            display: none;
+            p {
+              font-size: small;
+            }
+          }
+        }
+      }
+    }
+    button {
+      font-size: 13px;
+    }
+  }
 }
 
 // Resnposive untuk Handphone
@@ -263,7 +346,7 @@ main {
       z-index: 1;
       flex-direction: column;
       position: absolute;
-      background-color: rgb(18, 9, 49);
+      background-color: var(--coklatmuda);
       #short-by {
         width: 80px;
         height: 20px;
@@ -285,7 +368,7 @@ main {
       z-index: 1;
       padding: 10px 35px;
       border-radius: 0 0 10px 10px;
-      background-color: rgb(18, 9, 49);
+      background-color: var(--coklatmuda);
       ul {
         flex-direction: column;
         gap: 5px;
@@ -317,6 +400,56 @@ main {
         padding: 0.3rem;
         font-size: 10px;
       }
+    }
+  }
+  main {
+    h1 {
+      font-size: large;
+    }
+    .our-product {
+      .product-content {
+        img {
+          width: 200px;
+          height: 230px;
+        }
+        .product-about {
+          width: 167px;
+          h3 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 10px;
+          }
+        }
+        .harga {
+          del {
+            h4 {
+              font-size: 13px;
+            }
+          }
+          h4 {
+            font-size: 13px;
+          }
+        }
+      }
+      .cart {
+        display: block;
+        .cart-content {
+          background-color: transparent;
+          button {
+            display: block;
+          }
+          .share {
+            display: none;
+            p {
+              font-size: small;
+            }
+          }
+        }
+      }
+    }
+    button {
+      font-size: 10px;
     }
   }
 }
