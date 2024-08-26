@@ -248,6 +248,11 @@ section {
 }
 
 .container {
+  position: absolute;
+  display: none;
+  top: 30px;
+  left: 30%;
+  z-index: 9999;
   max-width: 800px;
   margin: 10px auto;
   padding: 20px;
@@ -320,6 +325,9 @@ section {
       font-weight: normal;
     }
   }
+}
+.active {
+  display: flex;
 }
 
 // Responsive untuk IPAD

@@ -253,6 +253,11 @@ section .card .card-satu:hover {
 }
 
 .container {
+  position: absolute;
+  display: none;
+  top: 30px;
+  left: 30%;
+  z-index: 9999;
   max-width: 800px;
   margin: 10px auto;
   padding: 20px;
@@ -325,6 +330,10 @@ section .card .card-satu:hover {
   white-space: nowrap;
   font-size: 15px;
   font-weight: normal;
+}
+
+.active {
+  display: flex;
 }
 
 @media screen and (max-width: 1000px) and (min-width: 751px) {
