@@ -149,19 +149,18 @@ main {
       }
       .harga {
         display: flex;
+        justify-content: space-between;
+        padding: 1rem 0 2rem 1rem;
         del {
           text-decoration: line-through red 2px;
         }
-      }
-      h4 {
-        padding: 1rem 0 2rem 1rem;
       }
       .disc {
         position: absolute;
         top: -5px;
         right: -5px;
         z-index: 19;
-        background-color: var(--ungu);
+        background-color: var(--coklat);
         color: white;
         width: fit-content;
         padding: 7px 3px;
@@ -209,12 +208,12 @@ main {
     }
   }
   button {
-  color: #b88e2f;
-  border: 1px solid #b88e2f;
-  padding: 0.5rem 3rem;
-  font-weight: bold;
-  cursor: pointer;
-}
+    color: #b88e2f;
+    border: 1px solid #b88e2f;
+    padding: 0.5rem 3rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
 }
 
 // Responsive untuk IPAD
@@ -270,6 +269,56 @@ main {
         padding: 0.5rem;
         font-size: 0.6rem;
       }
+    }
+  }
+  main {
+    h1 {
+      font-size: large;
+    }
+    .our-product {
+      .product-content {
+        img {
+          width: 200px;
+          height: 230px;
+        }
+        .product-about {
+          width: 167px;
+          h3 {
+            font-size: large;
+          }
+          p {
+            font-size: small;
+          }
+        }
+        .harga {
+          del {
+            h4 {
+              font-size: small;
+            }
+          }
+          h4 {
+            font-size: small;
+          }
+        }
+      }
+      .cart {
+        display: block;
+        .cart-content {
+          background-color: transparent;
+          button {
+            display: block;
+          }
+          .share {
+            display: none;
+            p {
+              font-size: small;
+            }
+          }
+        }
+      }
+    }
+    button {
+      font-size: 13px;
     }
   }
 }
@@ -351,6 +400,56 @@ main {
         padding: 0.3rem;
         font-size: 10px;
       }
+    }
+  }
+  main {
+    h1 {
+      font-size: large;
+    }
+    .our-product {
+      .product-content {
+        img {
+          width: 200px;
+          height: 230px;
+        }
+        .product-about {
+          width: 167px;
+          h3 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 10px;
+          }
+        }
+        .harga {
+          del {
+            h4 {
+              font-size: 13px;
+            }
+          }
+          h4 {
+            font-size: 13px;
+          }
+        }
+      }
+      .cart {
+        display: block;
+        .cart-content {
+          background-color: transparent;
+          button {
+            display: block;
+          }
+          .share {
+            display: none;
+            p {
+              font-size: small;
+            }
+          }
+        }
+      }
+    }
+    button {
+      font-size: 10px;
     }
   }
 }
