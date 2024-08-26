@@ -234,6 +234,12 @@ header .whychoose-dua-tiga button {
   nav .show {
     display: flex;
   }
+  header .whychoose-dua .whychoose-dua-satu h1 {
+    font-size: 25px;
+  }
+  header .whychoose-dua .whychoose-dua-dua {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */

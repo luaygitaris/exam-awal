@@ -240,4 +240,16 @@ header {
       display: flex;
     }
   }
+  header {
+    .whychoose-dua {
+        .whychoose-dua-satu {
+            h1 {
+                font-size: 25px;
+            }
+        }
+        .whychoose-dua-dua {
+            flex-direction: column;
+        }
+    }
+  }
 }
