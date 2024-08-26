@@ -231,6 +231,43 @@ header .whychoose-dua-tiga button {
   display: flex;
 }
 
+footer {
+  background-color: #eee;
+  padding-bottom: 50px;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  border-top: 3px solid #eee;
+  padding-top: 90px;
+}
+footer .footer-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+footer .footer-container div .address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+footer .footer-container ul {
+  list-style-type: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-atas-kanan {
+  display: flex;
+  gap: 10px;
+  color: black;
+}
+footer .footer-atas-kanan a {
+  color: black;
+}
+
 @media screen and (max-width: 1000px) and (min-width: 751px) {
   nav {
     padding: 10px;
@@ -262,6 +299,34 @@ header .whychoose-dua-tiga button {
   }
   nav .show {
     display: flex;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer-container {
+    gap: 15px;
+  }
+  footer .footer-container div {
+    gap: 1px;
+  }
+  footer .footer-container div h1 {
+    font-size: 30px;
+  }
+  footer .footer-container div .address {
+    gap: 5px;
+  }
+  footer .footer-container div .address p {
+    font-size: 15px;
+  }
+  footer .footer-container div h3 {
+    font-size: medium;
+  }
+  footer .footer-container div ul {
+    gap: 0px;
+  }
+  footer .footer-container div ul li {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -348,6 +413,35 @@ header .whychoose-dua-tiga button {
     font-size: 10px;
   }
   .container .section div #country {
+    font-size: 10px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer .footer-container div {
+    gap: 1px;
+  }
+  footer .footer-container div h1 {
+    font-size: 20px;
+  }
+  footer .footer-container div .address {
+    gap: 5px;
+  }
+  footer .footer-container div .address p {
+    font-size: 10px;
+  }
+  footer .footer-container div h3 {
+    font-size: medium;
+  }
+  footer .footer-container div ul {
+    gap: 0px;
+  }
+  footer .footer-container div ul li {
     font-size: 10px;
   }
 }
