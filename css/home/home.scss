@@ -116,13 +116,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px 0;
   gap: 1.5rem;
   width: 100%;
   .our-product {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    gap: 30px;
+    gap: 10px;
     padding: 0 15px;
     .product-content {
       display: flex;
@@ -131,14 +132,23 @@ main {
       position: relative;
       padding: 0 10px;
       img {
-        width: 95%;
+        width: 280px;
+        height: 300px;
       }
       .product-about {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        height: 110px;
+        padding: 1rem 0 2rem 1rem;
+        width: 280px;
+      }
+      h4 {
         padding: 1rem 0 2rem 1rem;
       }
+    }
+    .product-content:hover .cart {
+      display: block;
     }
     .cart {
       display: none;
@@ -174,13 +184,6 @@ main {
       display: block;
     }
   }
-}
-
-.product button {
-  color: #b88e2f;
-  border: 1px solid #b88e2f;
-  padding: 0.5rem 3rem;
-  font-weight: bold;
 }
 
 // Responsive untuk IPAD
