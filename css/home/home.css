@@ -6,6 +6,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --ungu: rgb(18, 9, 49);
+  --abu: #eee;
+}
+
 /* Navbar */
 nav {
   display: flex;
@@ -15,7 +20,7 @@ nav {
   top: 0;
   z-index: 9999;
   padding: 10px 50px;
-  background-color: rgb(18, 9, 49);
+  background-color: var(--ungu);
   color: white;
 }
 nav .nav-left {
@@ -112,6 +117,7 @@ header .banner-content button {
   background-color: #b88e2f;
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 main {
@@ -148,8 +154,28 @@ main .our-product .product-content .product-about {
   padding: 1rem 0 2rem 1rem;
   width: 280px;
 }
+main .our-product .product-content .harga {
+  display: flex;
+}
+main .our-product .product-content .harga del {
+  text-decoration: line-through red 2px;
+}
 main .our-product .product-content h4 {
   padding: 1rem 0 2rem 1rem;
+}
+main .our-product .product-content .disc {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: 19;
+  background-color: var(--ungu);
+  color: white;
+  width: fit-content;
+  padding: 7px 3px;
+  border-radius: 999px;
+}
+main .our-product .product-content .disc:hover {
+  color: red;
 }
 main .our-product .product-content:hover .cart {
   display: block;
@@ -186,6 +212,13 @@ main .our-product .cart .share {
 }
 main .our-product .show {
   display: block;
+}
+main button {
+  color: #b88e2f;
+  border: 1px solid #b88e2f;
+  padding: 0.5rem 3rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) and (min-width: 751px) {

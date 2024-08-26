@@ -5,7 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+:root {
+  --ungu: rgb(18, 9, 49);
+  --abu: #eee;
+}
 /* Navbar */
 nav {
   display: flex;
@@ -15,7 +18,7 @@ nav {
   top: 0;
   z-index: 9999;
   padding: 10px 50px;
-  background-color: rgb(18, 9, 49);
+  background-color: var(--ungu);
   color: white;
   .nav-left {
     display: flex;
@@ -109,6 +112,7 @@ header {
       background-color: #b88e2f;
       border: none;
       color: white;
+      cursor: pointer;
     }
   }
 }
@@ -143,8 +147,28 @@ main {
         padding: 1rem 0 2rem 1rem;
         width: 280px;
       }
+      .harga {
+        display: flex;
+        del {
+          text-decoration: line-through red 2px;
+        }
+      }
       h4 {
         padding: 1rem 0 2rem 1rem;
+      }
+      .disc {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        z-index: 19;
+        background-color: var(--ungu);
+        color: white;
+        width: fit-content;
+        padding: 7px 3px;
+        border-radius: 999px;
+      }
+      .disc:hover {
+        color: red;
       }
     }
     .product-content:hover .cart {
@@ -184,6 +208,13 @@ main {
       display: block;
     }
   }
+  button {
+  color: #b88e2f;
+  border: 1px solid #b88e2f;
+  padding: 0.5rem 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
 }
 
 // Responsive untuk IPAD
