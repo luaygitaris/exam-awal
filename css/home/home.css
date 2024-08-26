@@ -7,7 +7,8 @@
 }
 
 :root {
-  --ungu: rgb(18, 9, 49);
+  --coklatmuda: #faf3ea;
+  --coklat: #b88e2f;
   --abu: #eee;
 }
 
@@ -20,8 +21,7 @@ nav {
   top: 0;
   z-index: 9999;
   padding: 10px 50px;
-  background-color: var(--ungu);
-  color: white;
+  background-color: var(--coklatmuda);
 }
 nav .nav-left {
   display: flex;
@@ -38,7 +38,7 @@ nav .nav-left .map {
 }
 nav .nav-left .map i {
   font-size: x-large;
-  color: white;
+  color: black;
 }
 nav .nav-left .map p {
   font-size: small;
@@ -70,7 +70,7 @@ nav .account {
   font-size: x-large;
 }
 nav .account i {
-  color: white;
+  color: black;
 }
 nav .hamburger {
   width: auto;
@@ -82,7 +82,7 @@ nav .hamburger {
 nav .hamburger .bar {
   width: 20px;
   height: 2px;
-  background-color: white;
+  background-color: black;
   margin: 3px;
 }
 
@@ -241,7 +241,7 @@ main button {
     padding: 10px 30px;
     border-radius: 10px;
     z-index: 1;
-    background-color: rgb(18, 9, 49);
+    background-color: var(--coklatmuda);
   }
   nav .list ul {
     flex-direction: column;
@@ -292,7 +292,7 @@ main button {
     z-index: 1;
     flex-direction: column;
     position: absolute;
-    background-color: rgb(18, 9, 49);
+    background-color: var(--coklatmuda);
   }
   nav .search #short-by {
     width: 80px;
@@ -314,7 +314,7 @@ main button {
     z-index: 1;
     padding: 10px 35px;
     border-radius: 0 0 10px 10px;
-    background-color: rgb(18, 9, 49);
+    background-color: var(--coklatmuda);
   }
   nav .list ul {
     flex-direction: column;
