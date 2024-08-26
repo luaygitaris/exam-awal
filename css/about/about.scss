@@ -14,3 +14,77 @@ a {
   --coklat: #b88e2f;
   --abu: #eee;
 }
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 10px 50px;
+  background-color: var(--coklatmuda);
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .logo {
+      display: flex;
+      gap: 3px;
+    }
+    .map {
+      display: flex;
+      align-items: end;
+      i {
+        font-size: x-large;
+        color: black;
+      }
+      p {
+        font-size: small;
+      }
+    }
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    select,
+    input {
+      height: 30px;
+      padding: 0 10px;
+    }
+    input {
+      width: 300px;
+    }
+  }
+  ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    li {
+      cursor: pointer;
+    }
+  }
+  .account {
+    display: flex;
+    gap: 20px;
+    font-size: x-large;
+    i {
+      color: black;
+    }
+  }
+  .hamburger {
+    width: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    .bar {
+      width: 20px;
+      height: 2px;
+      background-color: black;
+      margin: 3px;
+    }
+  }
+}
