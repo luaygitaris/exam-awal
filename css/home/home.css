@@ -231,6 +231,101 @@ section .about-atas {
   text-align: center;
   gap: 10px;
 }
+section .card {
+  width: 90%;
+  height: 300px;
+  margin: 30px 60px;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+section .card .card-satu {
+  border: 1px solid var(--coklat);
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 30px 10px 0px 30px;
+}
+section .card .card-satu:hover {
+  transition-duration: 700ms;
+  box-shadow: 5px 5px black;
+}
+
+.container {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px;
+  border-radius: 8px;
+}
+.container .section {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.container .section h2 {
+  font-size: 1.5rem;
+}
+.container .section .form-group {
+  margin-bottom: 20px;
+}
+.container .section .form-group label {
+  display: block;
+  font-size: 0.875rem;
+  color: black;
+  margin-bottom: 5px;
+}
+.container .section .form-group #foto {
+  display: block;
+  align-items: center;
+}
+.container .section .input-group {
+  display: flex;
+  align-items: center;
+}
+.container .section .input-group span {
+  width: 80%;
+  padding: 9px 5px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+.container .section .input-group input {
+  border-radius: 0 4px 4px 0;
+  border-left: none;
+  margin: 5px 0px;
+}
+.container .section input[type=text],
+.container .section input[type=email],
+.container .section textarea,
+.container .section select {
+  width: 100%;
+  font-size: 0.875rem;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.container .button-submit {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+.container .button-submit button {
+  background: var(--coklat);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px var(--coklat);
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: normal;
+}
 
 @media screen and (max-width: 1000px) and (min-width: 751px) {
   nav {
@@ -320,6 +415,24 @@ section .about-atas {
   }
   main button {
     font-size: 13px;
+  }
+  section .about-atas h4 {
+    font-size: 15px;
+  }
+  section .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  section .card .card-satu {
+    height: auto;
+  }
+  section .card .card-satu h3 {
+    font-size: medium;
+  }
+  section .card .card-satu p {
+    font-size: small;
   }
 }
 @media screen and (max-width: 750px) {
@@ -436,6 +549,25 @@ section .about-atas {
     font-size: small;
   }
   main button {
+    font-size: 10px;
+  }
+  section .about-atas h4 {
+    font-size: 12px;
+  }
+  section .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  section .card .card-satu {
+    height: auto;
+    padding: 20px;
+  }
+  section .card .card-satu h3 {
+    font-size: small;
+  }
+  section .card .card-satu p {
     font-size: 10px;
   }
 }
