@@ -353,11 +353,25 @@ section {
     }
   }
   section {
+    .about-atas {
+      h4 {
+        font-size: 15px;
+      }
+    }
     .card {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 15px;
+      .card-satu {
+        height: auto;
+        h3 {
+          font-size: medium;
+        }
+        p {
+          font-size: small;
+        }
+      }
     }
   }
 }
@@ -492,11 +506,26 @@ section {
     }
   }
   section {
+    .about-atas {
+      h4 {
+        font-size: 12px;
+      }
+    }
     .card {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 15px;
+      .card-satu {
+        height: auto;
+        padding: 20px;
+        h3 {
+          font-size: small;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
     }
   }
 }

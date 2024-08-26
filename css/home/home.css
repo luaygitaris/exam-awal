@@ -341,11 +341,23 @@ section .card .card-satu:hover {
   main button {
     font-size: 13px;
   }
+  section .about-atas h4 {
+    font-size: 15px;
+  }
   section .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+  }
+  section .card .card-satu {
+    height: auto;
+  }
+  section .card .card-satu h3 {
+    font-size: medium;
+  }
+  section .card .card-satu p {
+    font-size: small;
   }
 }
 @media screen and (max-width: 750px) {
@@ -464,11 +476,24 @@ section .card .card-satu:hover {
   main button {
     font-size: 10px;
   }
+  section .about-atas h4 {
+    font-size: 12px;
+  }
   section .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+  }
+  section .card .card-satu {
+    height: auto;
+    padding: 20px;
+  }
+  section .card .card-satu h3 {
+    font-size: small;
+  }
+  section .card .card-satu p {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 500px) {
