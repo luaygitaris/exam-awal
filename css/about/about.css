@@ -300,6 +300,34 @@ footer .footer-atas-kanan a {
   nav .show {
     display: flex;
   }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer-container {
+    gap: 15px;
+  }
+  footer .footer-container div {
+    gap: 1px;
+  }
+  footer .footer-container div h1 {
+    font-size: 30px;
+  }
+  footer .footer-container div .address {
+    gap: 5px;
+  }
+  footer .footer-container div .address p {
+    font-size: 15px;
+  }
+  footer .footer-container div h3 {
+    font-size: medium;
+  }
+  footer .footer-container div ul {
+    gap: 0px;
+  }
+  footer .footer-container div ul li {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 750px) {
   nav {
@@ -385,6 +413,35 @@ footer .footer-atas-kanan a {
     font-size: 10px;
   }
   .container .section div #country {
+    font-size: 10px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer .footer-container div {
+    gap: 1px;
+  }
+  footer .footer-container div h1 {
+    font-size: 20px;
+  }
+  footer .footer-container div .address {
+    gap: 5px;
+  }
+  footer .footer-container div .address p {
+    font-size: 10px;
+  }
+  footer .footer-container div h3 {
+    font-size: medium;
+  }
+  footer .footer-container div ul {
+    gap: 0px;
+  }
+  footer .footer-container div ul li {
     font-size: 10px;
   }
 }
