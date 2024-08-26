@@ -225,6 +225,26 @@ section {
     text-align: center;
     gap: 10px;
   }
+  .card {
+    width: 90%;
+    height: 300px;
+    margin: 30px 60px;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    .card-satu {
+      border: 1px solid var(--coklat);
+      width: 350px;
+      height: 200px;
+      border-radius: 10px;
+      padding: 30px 10px 0px 30px;
+    }
+    .card-satu:hover {
+      transition-duration: 700ms;
+      box-shadow: 5px 5px black;
+    }
+  }
 }
 
 // Responsive untuk IPAD
@@ -330,6 +350,14 @@ section {
     }
     button {
       font-size: 13px;
+    }
+  }
+  section {
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
     }
   }
 }
@@ -461,6 +489,14 @@ section {
     }
     button {
       font-size: 10px;
+    }
+  }
+  section {
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
     }
   }
 }

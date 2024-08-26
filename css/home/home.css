@@ -220,6 +220,38 @@ main button {
   cursor: pointer;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .about-atas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+section .card {
+  width: 90%;
+  height: 300px;
+  margin: 30px 60px;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+section .card .card-satu {
+  border: 1px solid var(--coklat);
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 30px 10px 0px 30px;
+}
+section .card .card-satu:hover {
+  transition-duration: 700ms;
+  box-shadow: 5px 5px black;
+}
+
 @media screen and (max-width: 1000px) and (min-width: 751px) {
   nav {
     padding: 10px;
@@ -308,6 +340,12 @@ main button {
   }
   main button {
     font-size: 13px;
+  }
+  section .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -425,6 +463,12 @@ main button {
   }
   main button {
     font-size: 10px;
+  }
+  section .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
 }
 @media screen and (max-width: 500px) {
