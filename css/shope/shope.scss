@@ -160,6 +160,105 @@ header {
     }
   }
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  gap: 1.5rem;
+  width: 100%;
+  .our-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 0 15px;
+    .product-content {
+      display: flex;
+      flex-direction: column;
+      background-color: #eee;
+      position: relative;
+      padding: 0 10px;
+      img {
+        width: 280px;
+        height: 300px;
+      }
+      .product-about {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        height: 110px;
+        padding: 1rem 0 2rem 1rem;
+        width: 280px;
+      }
+      .harga {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0 2rem 1rem;
+        del {
+          text-decoration: line-through red 2px;
+        }
+      }
+      .disc {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        z-index: 19;
+        background-color: var(--coklat);
+        color: white;
+        width: fit-content;
+        padding: 7px 3px;
+        border-radius: 999px;
+      }
+      .disc:hover {
+        color: red;
+      }
+    }
+    .product-content:hover .cart {
+      display: block;
+    }
+    .cart {
+      display: none;
+      .cart-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 7;
+        background-color: #3a3a3a;
+        opacity: 73%;
+      }
+      button {
+        background-color: white;
+        padding: 0.5rem 1.5rem;
+        border: none;
+        color: #b88e2f;
+      }
+      .share {
+        display: flex;
+        gap: 1rem;
+        color: white;
+      }
+    }
+    .show {
+      display: block;
+    }
+  }
+  button {
+    color: #b88e2f;
+    border: 1px solid #b88e2f;
+    padding: 0.5rem 3rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
 
 @media screen and (max-width: 1000px) and (min-width: 751px) {
   nav {
@@ -226,6 +325,56 @@ header {
           font-size: 13px;
         }
       }
+    }
+  }
+  main {
+    h1 {
+      font-size: large;
+    }
+    .our-product {
+      .product-content {
+        img {
+          width: 200px;
+          height: 230px;
+        }
+        .product-about {
+          width: 167px;
+          h3 {
+            font-size: large;
+          }
+          p {
+            font-size: small;
+          }
+        }
+        .harga {
+          del {
+            h4 {
+              font-size: small;
+            }
+          }
+          h4 {
+            font-size: small;
+          }
+        }
+      }
+      .cart {
+        display: block;
+        .cart-content {
+          background-color: transparent;
+          button {
+            display: block;
+          }
+          .share {
+            display: none;
+            p {
+              font-size: small;
+            }
+          }
+        }
+      }
+    }
+    button {
+      font-size: 13px;
     }
   }
 }
@@ -322,6 +471,7 @@ header {
       .banner-nav2 {
         display: none;
         position: absolute;
+        z-index: 5;
         top: 115px;
         left: 0px;
         padding: 10px;
@@ -340,6 +490,56 @@ header {
       .active {
         display: block;
       }
+    }
+  }
+  main {
+    h1 {
+      font-size: large;
+    }
+    .our-product {
+      .product-content {
+        img {
+          width: 200px;
+          height: 230px;
+        }
+        .product-about {
+          width: 167px;
+          h3 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 10px;
+          }
+        }
+        .harga {
+          del {
+            h4 {
+              font-size: 13px;
+            }
+          }
+          h4 {
+            font-size: 13px;
+          }
+        }
+      }
+      .cart {
+        display: block;
+        .cart-content {
+          background-color: transparent;
+          button {
+            display: block;
+          }
+          .share {
+            display: none;
+            p {
+              font-size: small;
+            }
+          }
+        }
+      }
+    }
+    button {
+      font-size: 10px;
     }
   }
 }
