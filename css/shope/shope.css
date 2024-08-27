@@ -317,6 +317,46 @@ main button {
   header .banner-nav .banner-nav2 select {
     font-size: 13px;
   }
+  main h1 {
+    font-size: large;
+  }
+  main .our-product .product-content img {
+    width: 200px;
+    height: 230px;
+  }
+  main .our-product .product-content .product-about {
+    width: 167px;
+  }
+  main .our-product .product-content .product-about h3 {
+    font-size: large;
+  }
+  main .our-product .product-content .product-about p {
+    font-size: small;
+  }
+  main .our-product .product-content .harga del h4 {
+    font-size: small;
+  }
+  main .our-product .product-content .harga h4 {
+    font-size: small;
+  }
+  main .our-product .cart {
+    display: block;
+  }
+  main .our-product .cart .cart-content {
+    background-color: transparent;
+  }
+  main .our-product .cart .cart-content button {
+    display: block;
+  }
+  main .our-product .cart .cart-content .share {
+    display: none;
+  }
+  main .our-product .cart .cart-content .share p {
+    font-size: small;
+  }
+  main button {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 750px) {
   nav {
@@ -420,6 +460,46 @@ main button {
   }
   header .banner-nav .active {
     display: block;
+  }
+  main h1 {
+    font-size: large;
+  }
+  main .our-product .product-content img {
+    width: 200px;
+    height: 230px;
+  }
+  main .our-product .product-content .product-about {
+    width: 167px;
+  }
+  main .our-product .product-content .product-about h3 {
+    font-size: 15px;
+  }
+  main .our-product .product-content .product-about p {
+    font-size: 10px;
+  }
+  main .our-product .product-content .harga del h4 {
+    font-size: 13px;
+  }
+  main .our-product .product-content .harga h4 {
+    font-size: 13px;
+  }
+  main .our-product .cart {
+    display: block;
+  }
+  main .our-product .cart .cart-content {
+    background-color: transparent;
+  }
+  main .our-product .cart .cart-content button {
+    display: block;
+  }
+  main .our-product .cart .cart-content .share {
+    display: none;
+  }
+  main .our-product .cart .cart-content .share p {
+    font-size: small;
+  }
+  main button {
+    font-size: 10px;
   }
 }
 
