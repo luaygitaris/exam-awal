@@ -368,6 +368,8 @@ footer {
       font-size: large;
     }
     .our-product {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       .product-content {
         img {
           width: 200px;
@@ -411,6 +413,34 @@ footer {
     }
     button {
       font-size: 13px;
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    .footer-container {
+      gap: 15px;
+      div {
+        gap: 1px;
+        h1 {
+          font-size: 30px;
+        }
+        .address {
+          gap: 5px;
+          p {
+            font-size: 15px;
+          }
+        }
+        h3 {
+          font-size: medium;
+        }
+        ul {
+          gap: 0px;
+          li {
+            font-size: 15px;
+          }
+        }
+      }
     }
   }
 }
@@ -576,6 +606,35 @@ footer {
     }
     button {
       font-size: 10px;
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    .footer-container {
+      flex-direction: column;
+      gap: 15px;
+      div {
+        gap: 1px;
+        h1 {
+          font-size: 20px;
+        }
+        .address {
+          gap: 5px;
+          p {
+            font-size: 10px;
+          }
+        }
+        h3 {
+          font-size: medium;
+        }
+        ul {
+          gap: 0px;
+          li {
+            font-size: 10px;
+          }
+        }
+      }
     }
   }
 }
