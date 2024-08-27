@@ -231,6 +231,38 @@ header .whychoose-dua-tiga button {
   display: flex;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .about-atas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+section .card {
+  width: 90%;
+  height: 300px;
+  margin: 30px 60px;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+section .card .card-satu {
+  border: 1px solid var(--coklat);
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 30px 10px 0px 30px;
+}
+section .card .card-satu:hover {
+  transition-duration: 700ms;
+  box-shadow: 5px 5px black;
+}
+
 footer {
   background-color: #eee;
   padding-bottom: 50px;
@@ -299,6 +331,24 @@ footer .footer-atas-kanan a {
   }
   nav .show {
     display: flex;
+  }
+  section .about-atas h4 {
+    font-size: 15px;
+  }
+  section .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  section .card .card-satu {
+    height: auto;
+  }
+  section .card .card-satu h3 {
+    font-size: medium;
+  }
+  section .card .card-satu p {
+    font-size: small;
   }
   footer {
     display: flex;
@@ -413,6 +463,25 @@ footer .footer-atas-kanan a {
     font-size: 10px;
   }
   .container .section div #country {
+    font-size: 10px;
+  }
+  section .about-atas h4 {
+    font-size: 12px;
+  }
+  section .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  section .card .card-satu {
+    height: auto;
+    padding: 20px;
+  }
+  section .card .card-satu h3 {
+    font-size: small;
+  }
+  section .card .card-satu p {
     font-size: 10px;
   }
   footer {

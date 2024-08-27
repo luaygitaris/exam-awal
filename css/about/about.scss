@@ -228,6 +228,37 @@ header {
 .active {
   display: flex;
 }
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .about-atas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .card {
+    width: 90%;
+    height: 300px;
+    margin: 30px 60px;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    .card-satu {
+      border: 1px solid var(--coklat);
+      width: 350px;
+      height: 200px;
+      border-radius: 10px;
+      padding: 30px 10px 0px 30px;
+    }
+    .card-satu:hover {
+      transition-duration: 700ms;
+      box-shadow: 5px 5px black;
+    }
+  }
+}
 footer {
   background-color: #eee;
   padding-bottom: 50px;
@@ -297,6 +328,28 @@ footer {
     }
     .show {
       display: flex;
+    }
+  }
+  section {
+    .about-atas {
+      h4 {
+        font-size: 15px;
+      }
+    }
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      .card-satu {
+        height: auto;
+        h3 {
+          font-size: medium;
+        }
+        p {
+          font-size: small;
+        }
+      }
     }
   }
   footer {
@@ -426,6 +479,29 @@ footer {
           font-size: 10px;
         }
         #country {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  section {
+    .about-atas {
+      h4 {
+        font-size: 12px;
+      }
+    }
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      .card-satu {
+        height: auto;
+        padding: 20px;
+        h3 {
+          font-size: small;
+        }
+        p {
           font-size: 10px;
         }
       }
