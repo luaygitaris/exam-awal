@@ -92,169 +92,58 @@ nav .hamburger .bar {
 }
 
 header {
-  position: relative;
+  padding: 50px;
 }
-header img {
-  width: 100%;
+header .whychoose-dua {
+  padding: 10px;
 }
-header .banner-content {
+header .whychoose-dua .whychoose-dua-satu h1 {
+  letter-spacing: 1.4px;
+  line-height: 30px;
+  color: var(--coklat);
+  padding-bottom: 30px;
+}
+header .whychoose-dua .whychoose-dua-satu p {
+  font-size: 13px;
+  color: #727272;
+}
+header .whychoose-dua .whychoose-dua-dua {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  background-color: #fff3e3;
-  padding: 15px 50px;
-  width: fit-content;
-}
-header .banner-content h1 {
-  width: 55%;
-  color: #b88e2f;
-  font-size: 2rem;
-}
-header .banner-content p {
-  font-size: 0.875rem;
-}
-header .banner-content button {
-  padding: 1rem;
-  width: 30%;
-  background-color: #b88e2f;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 0;
-  gap: 1.5rem;
-  width: 100%;
-}
-main .our-product {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   gap: 10px;
-  padding: 0 15px;
-}
-main .our-product .product-content {
-  display: flex;
-  flex-direction: column;
-  background-color: #eee;
-  position: relative;
-  padding: 0 10px;
-}
-main .our-product .product-content img {
-  width: 280px;
-  height: 300px;
-}
-main .our-product .product-content .product-about {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  height: 110px;
-  padding: 1rem 0 2rem 1rem;
-  width: 280px;
-}
-main .our-product .product-content .harga {
-  display: flex;
   justify-content: space-between;
-  padding: 1rem 0 2rem 1rem;
+  padding: 10px 0;
 }
-main .our-product .product-content .harga del {
-  text-decoration: line-through red 2px;
-}
-main .our-product .product-content .disc {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  z-index: 19;
-  background-color: var(--coklat);
-  color: white;
-  width: fit-content;
-  padding: 7px 3px;
-  border-radius: 999px;
-}
-main .our-product .product-content .disc:hover {
-  color: red;
-}
-main .our-product .product-content:hover .cart {
-  display: block;
-}
-main .our-product .cart {
-  display: none;
-}
-main .our-product .cart .cart-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  gap: 1rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 7;
-  background-color: #3a3a3a;
-  opacity: 73%;
-}
-main .our-product .cart button {
-  background-color: white;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  color: #b88e2f;
-}
-main .our-product .cart .share {
-  display: flex;
-  gap: 1rem;
-  color: white;
-}
-main .our-product .show {
-  display: block;
-}
-main button {
-  color: #b88e2f;
-  border: 1px solid #b88e2f;
-  padding: 0.5rem 3rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-section .about-atas {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 10px;
-}
-section .card {
-  width: 90%;
-  height: 300px;
-  margin: 30px 60px;
-  border-radius: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
-}
-section .card .card-satu {
-  border: 1px solid var(--coklat);
-  width: 350px;
-  height: 200px;
+header .whychoose-dua .whychoose-dua-dua div {
+  border: 1px solid #d3d3d3;
   border-radius: 10px;
-  padding: 30px 10px 0px 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
 }
-section .card .card-satu:hover {
-  transition-duration: 700ms;
-  box-shadow: 5px 5px black;
+header .whychoose-dua .whychoose-dua-dua div h3 {
+  padding: 10px;
+  color: var(--coklat);
+}
+header .whychoose-dua .whychoose-dua-dua div p {
+  font-size: 13px;
+  letter-spacing: 0%;
+  color: #727272;
+  line-height: 18px;
+  text-align: justify;
+}
+header .whychoose-dua-tiga {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+header .whychoose-dua-tiga button {
+  background-color: var(--coklatmuda);
+  padding: 15px 15px;
+  border-radius: 999px;
+  border: 1px solid var(--coklatmuda);
+  cursor: pointer;
 }
 
 .container {
@@ -342,6 +231,38 @@ section .card .card-satu:hover {
   display: flex;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .about-atas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+section .card {
+  width: 90%;
+  height: 300px;
+  margin: 30px 60px;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+section .card .card-satu {
+  border: 1px solid var(--coklat);
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 30px 10px 0px 30px;
+}
+section .card .card-satu:hover {
+  transition-duration: 700ms;
+  box-shadow: 5px 5px black;
+}
+
 footer {
   background-color: #eee;
   padding-bottom: 50px;
@@ -410,63 +331,6 @@ footer .footer-atas-kanan a {
   }
   nav .show {
     display: flex;
-  }
-  header {
-    background-size: contain;
-    height: 400px;
-  }
-  header .banner-content h4 {
-    font-size: small;
-  }
-  header .banner-content h1 {
-    font-size: medium;
-  }
-  header .banner-content p {
-    font-size: 0.6rem;
-  }
-  header .banner-content button {
-    padding: 0.5rem;
-    font-size: 0.6rem;
-  }
-  main h1 {
-    font-size: large;
-  }
-  main .our-product .product-content img {
-    width: 200px;
-    height: 230px;
-  }
-  main .our-product .product-content .product-about {
-    width: 167px;
-  }
-  main .our-product .product-content .product-about h3 {
-    font-size: large;
-  }
-  main .our-product .product-content .product-about p {
-    font-size: small;
-  }
-  main .our-product .product-content .harga del h4 {
-    font-size: small;
-  }
-  main .our-product .product-content .harga h4 {
-    font-size: small;
-  }
-  main .our-product .cart {
-    display: block;
-  }
-  main .our-product .cart .cart-content {
-    background-color: transparent;
-  }
-  main .our-product .cart .cart-content button {
-    display: block;
-  }
-  main .our-product .cart .cart-content .share {
-    display: none;
-  }
-  main .our-product .cart .cart-content .share p {
-    font-size: small;
-  }
-  main button {
-    font-size: 13px;
   }
   section .about-atas h4 {
     font-size: 15px;
@@ -570,85 +434,11 @@ footer .footer-atas-kanan a {
   nav .show {
     display: flex;
   }
-  header {
-    background-size: contain;
+  header .whychoose-dua .whychoose-dua-satu h1 {
+    font-size: 25px;
   }
-  header .banner-content {
-    width: 55%;
-    gap: 5px;
-    padding: 10px;
-  }
-  header .banner-content h4 {
-    font-size: smaller;
-  }
-  header .banner-content h1 {
-    font-size: small;
-  }
-  header .banner-content p {
-    font-size: 10px;
-  }
-  header .banner-content button {
-    padding: 0.3rem;
-    font-size: 10px;
-  }
-  main h1 {
-    font-size: large;
-  }
-  main .our-product .product-content img {
-    width: 200px;
-    height: 230px;
-  }
-  main .our-product .product-content .product-about {
-    width: 167px;
-  }
-  main .our-product .product-content .product-about h3 {
-    font-size: 15px;
-  }
-  main .our-product .product-content .product-about p {
-    font-size: 10px;
-  }
-  main .our-product .product-content .harga del h4 {
-    font-size: 13px;
-  }
-  main .our-product .product-content .harga h4 {
-    font-size: 13px;
-  }
-  main .our-product .cart {
-    display: block;
-  }
-  main .our-product .cart .cart-content {
-    background-color: transparent;
-  }
-  main .our-product .cart .cart-content button {
-    display: block;
-  }
-  main .our-product .cart .cart-content .share {
-    display: none;
-  }
-  main .our-product .cart .cart-content .share p {
-    font-size: small;
-  }
-  main button {
-    font-size: 10px;
-  }
-  section .about-atas h4 {
-    font-size: 12px;
-  }
-  section .card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-  section .card .card-satu {
-    height: auto;
-    padding: 20px;
-  }
-  section .card .card-satu h3 {
-    font-size: small;
-  }
-  section .card .card-satu p {
-    font-size: 10px;
+  header .whychoose-dua .whychoose-dua-dua {
+    flex-direction: column;
   }
   .container {
     top: 50px;
@@ -673,6 +463,25 @@ footer .footer-atas-kanan a {
     font-size: 10px;
   }
   .container .section div #country {
+    font-size: 10px;
+  }
+  section .about-atas h4 {
+    font-size: 12px;
+  }
+  section .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  section .card .card-satu {
+    height: auto;
+    padding: 20px;
+  }
+  section .card .card-satu h3 {
+    font-size: small;
+  }
+  section .card .card-satu p {
     font-size: 10px;
   }
   footer {
@@ -705,30 +514,5 @@ footer .footer-atas-kanan a {
     font-size: 10px;
   }
 }
-@media screen and (max-width: 500px) {
-  header {
-    background-size: contain;
-  }
-  header .banner-content {
-    width: 55%;
-    gap: 5px;
-    padding: 10px;
-    top: 5px;
-    right: 15px;
-  }
-  header .banner-content h4 {
-    font-size: 10px;
-  }
-  header .banner-content h1 {
-    font-size: 12px;
-  }
-  header .banner-content p {
-    font-size: 8px;
-  }
-  header .banner-content button {
-    padding: 0.3rem;
-    font-size: 8px;
-  }
-}
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=about.css.map */
