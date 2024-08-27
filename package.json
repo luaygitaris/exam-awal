@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./css/home/home.scss ./css/home/home.css"
+    "sass": "sass --watch ./css/home/home.scss ./css/home/home.css",
+    "sass2": "sass --watch ./css/about/about.scss ./css/about/about.css",
+    "sass3": "sass --watch ./css/shope/shope.scss ./css/shope/shope.css"
   },
   "keywords": [],
   "author": "",
