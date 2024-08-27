@@ -7,8 +7,6 @@ hamburger.addEventListener("click", () => {
   menuList.classList.toggle("show");
 });
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const user = document.getElementById("user");
   const form = document.getElementById("form");
