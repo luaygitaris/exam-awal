@@ -7,13 +7,7 @@ hamburger.addEventListener("click", () => {
   menuList.classList.toggle("show");
 });
 
-const filterResult = document.getElementById("filterResult");
-const result = document.getElementById("result");
 
-filterResult.addEventListener("click", () => {
-  result.classList.toggle("active");
-  // console.log("asdasd");
-});
 
 document.addEventListener("DOMContentLoaded", () => {
   const user = document.getElementById("user");
@@ -32,4 +26,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+const filterResult = document.getElementById("filterResult");
+const result = document.getElementById("result");
 
+filterResult.addEventListener("click", () => {
+  result.classList.toggle("active");
+  // console.log("asdasd");
+});
+document.addEventListener("click", (a) => {
+  const insidefilter = filterResult.contains(a.target);
+  const insideresult = result.contains(a.target);
+  if (!insideresult && !insidefilter) {
+    result.classList.remove("active");
+  }
+});
