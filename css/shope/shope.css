@@ -173,8 +173,8 @@ main {
   width: 100%;
 }
 main .our-product {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-around;
   gap: 10px;
   padding: 0 15px;
