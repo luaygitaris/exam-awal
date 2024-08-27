@@ -17,6 +17,14 @@ a {
   --abu: #eee;
 }
 
+@keyframes berjalan {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 /* Navbar */
 nav {
   display: flex;
@@ -67,7 +75,15 @@ nav ul {
   list-style-type: none;
 }
 nav ul li {
+  color: var(--abu);
   cursor: pointer;
+}
+nav ul li a {
+  color: #9f9f9f;
+}
+nav ul a:hover {
+  transition: all 0.5s ease-in-out;
+  color: black;
 }
 nav .account {
   display: flex;
@@ -89,6 +105,60 @@ nav .hamburger .bar {
   height: 2px;
   background-color: black;
   margin: 3px;
+}
+
+header {
+  position: relative;
+}
+header img {
+  width: 100%;
+}
+header .banner-shop {
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  animation: berjalan 4s;
+}
+header .banner-shop .banner-shop-about {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .banner-shop .banner-shop-about h3 {
+  font-weight: bolder;
+}
+header .banner-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  margin-top: -10px;
+  padding: 10px 3rem;
+}
+header .banner-nav .banner-nav1 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+header .banner-nav .banner-nav1 div {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+header .banner-nav .banner-nav2 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+header .banner-nav .banner-nav2 select {
+  border: none;
+  padding: 5px;
+  color: #9f9f9f;
 }
 
 @media screen and (max-width: 1000px) and (min-width: 751px) {
@@ -122,6 +192,24 @@ nav .hamburger .bar {
   }
   nav .show {
     display: flex;
+  }
+  header .banner-shop h2 {
+    font-size: large;
+  }
+  header .banner-shop .banner-shop-about h4 {
+    font-size: 15px;
+  }
+  header .banner-shop .banner-shop-about p {
+    font-size: 15px;
+  }
+  header .banner-nav .banner-nav1 p {
+    font-size: 13px;
+  }
+  header .banner-nav .banner-nav2 p {
+    font-size: 13px;
+  }
+  header .banner-nav .banner-nav2 select {
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -178,6 +266,32 @@ nav .hamburger .bar {
   }
   nav .show {
     display: flex;
+  }
+  header .banner-shop {
+    top: 10%;
+    left: 40%;
+    gap: 0px;
+  }
+  header .banner-shop h2 {
+    font-size: medium;
+  }
+  header .banner-shop .banner-shop-about {
+    gap: 5px;
+  }
+  header .banner-shop .banner-shop-about h4 {
+    font-size: 12px;
+  }
+  header .banner-shop .banner-shop-about p {
+    font-size: 12px;
+  }
+  header .banner-nav .banner-nav1 p {
+    font-size: 10px;
+  }
+  header .banner-nav .banner-nav2 p {
+    font-size: 10px;
+  }
+  header .banner-nav .banner-nav2 select {
+    font-size: 10px;
   }
 }
 

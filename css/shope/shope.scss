@@ -14,6 +14,14 @@ a {
   --coklat: #b88e2f;
   --abu: #eee;
 }
+@keyframes berjalan {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 /* Navbar */
 nav {
   display: flex;
@@ -62,7 +70,15 @@ nav {
     gap: 40px;
     list-style-type: none;
     li {
+      color: var(--abu);
       cursor: pointer;
+      a {
+        color: #9f9f9f;
+      }
+    }
+    a:hover {
+      transition: all 0.5s ease-in-out;
+      color: black;
     }
   }
   .account {
@@ -84,6 +100,60 @@ nav {
       height: 2px;
       background-color: black;
       margin: 3px;
+    }
+  }
+}
+
+header {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .banner-shop {
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    animation: berjalan 4s;
+    .banner-shop-about {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      h3 {
+        font-weight: bolder;
+      }
+    }
+  }
+  .banner-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    margin-top: -10px;
+    padding: 10px 3rem;
+    .banner-nav1 {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+    }
+    .banner-nav2 {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      select {
+        border: none;
+        padding: 5px;
+        color: #9f9f9f;
+      }
     }
   }
 }
@@ -120,6 +190,36 @@ nav {
     }
     .show {
       display: flex;
+    }
+  }
+  header {
+    .banner-shop {
+      h2 {
+        font-size: large;
+      }
+      .banner-shop-about {
+        h4 {
+          font-size: 15px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    .banner-nav {
+      .banner-nav1 {
+        p {
+          font-size: 13px;
+        }
+      }
+      .banner-nav2 {
+        p {
+          font-size: 13px;
+        }
+        select {
+            font-size: 13px;
+        }
+      }
     }
   }
 }
@@ -179,6 +279,40 @@ nav {
     }
     .show {
       display: flex;
+    }
+  }
+  header {
+    .banner-shop {
+        top: 10%;
+        left: 40%;
+        gap: 0px;
+      h2 {
+        font-size: medium;
+      }
+      .banner-shop-about {
+        gap: 5px;
+        h4 {
+          font-size: 12px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .banner-nav {
+      .banner-nav1 {
+        p {
+          font-size: 10px;
+        }
+      }
+      .banner-nav2 {
+        p {
+          font-size: 10px;
+        }
+        select {
+            font-size: 10px;
+        }
+      }
     }
   }
 }
