@@ -132,9 +132,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: antiquewhite;
+    background-color: var(--coklat);
     margin-top: -10px;
     padding: 10px 3rem;
+    .filter {
+      display: none;
+    }
     .banner-nav1 {
       display: flex;
       gap: 30px;
@@ -211,13 +214,16 @@ header {
         p {
           font-size: 13px;
         }
+        q {
+          font-size: 13px;
+        }
       }
       .banner-nav2 {
         p {
           font-size: 13px;
         }
         select {
-            font-size: 13px;
+          font-size: 13px;
         }
       }
     }
@@ -283,9 +289,9 @@ header {
   }
   header {
     .banner-shop {
-        top: 10%;
-        left: 40%;
-        gap: 0px;
+      top: 10%;
+      left: 40%;
+      gap: 0px;
       h2 {
         font-size: medium;
       }
@@ -300,18 +306,39 @@ header {
       }
     }
     .banner-nav {
+      //   flex-direction: column;
+      .filter {
+        display: block;
+        cursor: pointer;
+      }
       .banner-nav1 {
         p {
+          display: none;
+        }
+        q {
           font-size: 10px;
         }
       }
       .banner-nav2 {
+        display: none;
+        position: absolute;
+        top: 115px;
+        left: 0px;
+        padding: 10px;
+        background-color: var(--coklat);
+        border-radius: 5px;
+        div {
+          padding-bottom: 10px;
+        }
         p {
           font-size: 10px;
         }
         select {
-            font-size: 10px;
+          font-size: 10px;
         }
+      }
+      .active {
+        display: block;
       }
     }
   }

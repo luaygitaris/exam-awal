@@ -136,9 +136,12 @@ header .banner-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: antiquewhite;
+  background-color: var(--coklat);
   margin-top: -10px;
   padding: 10px 3rem;
+}
+header .banner-nav .filter {
+  display: none;
 }
 header .banner-nav .banner-nav1 {
   display: flex;
@@ -203,6 +206,9 @@ header .banner-nav .banner-nav2 select {
     font-size: 15px;
   }
   header .banner-nav .banner-nav1 p {
+    font-size: 13px;
+  }
+  header .banner-nav .banner-nav1 q {
     font-size: 13px;
   }
   header .banner-nav .banner-nav2 p {
@@ -284,14 +290,36 @@ header .banner-nav .banner-nav2 select {
   header .banner-shop .banner-shop-about p {
     font-size: 12px;
   }
+  header .banner-nav .filter {
+    display: block;
+    cursor: pointer;
+  }
   header .banner-nav .banner-nav1 p {
+    display: none;
+  }
+  header .banner-nav .banner-nav1 q {
     font-size: 10px;
+  }
+  header .banner-nav .banner-nav2 {
+    display: none;
+    position: absolute;
+    top: 115px;
+    left: 0px;
+    padding: 10px;
+    background-color: var(--coklat);
+    border-radius: 5px;
+  }
+  header .banner-nav .banner-nav2 div {
+    padding-bottom: 10px;
   }
   header .banner-nav .banner-nav2 p {
     font-size: 10px;
   }
   header .banner-nav .banner-nav2 select {
     font-size: 10px;
+  }
+  header .banner-nav .active {
+    display: block;
   }
 }
 
