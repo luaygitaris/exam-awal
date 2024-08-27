@@ -259,6 +259,42 @@ main {
     cursor: pointer;
   }
 }
+footer {
+  background-color: #eee;
+  padding-bottom: 50px;
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    border-top: 3px solid #eee;
+    padding-top: 90px;
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      .address {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+      }
+    }
+    ul {
+      list-style-type: none;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .footer-atas-kanan {
+    display: flex;
+    gap: 10px;
+    color: black;
+    a {
+      color: black;
+    }
+  }
+}
 
 @media screen and (max-width: 1000px) and (min-width: 751px) {
   nav {
