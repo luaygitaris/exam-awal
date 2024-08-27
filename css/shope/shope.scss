@@ -521,6 +521,7 @@ footer {
       }
     }
     .banner-nav {
+      position: relative;
       //   flex-direction: column;
       .filter {
         display: block;
@@ -538,7 +539,7 @@ footer {
         display: none;
         position: absolute;
         z-index: 5;
-        top: 115px;
+        top: 40px;
         left: 0px;
         padding: 10px;
         background-color: var(--coklat);

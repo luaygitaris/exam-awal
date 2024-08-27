@@ -499,6 +499,9 @@ footer .footer-atas-kanan a {
   header .banner-shop .banner-shop-about p {
     font-size: 12px;
   }
+  header .banner-nav {
+    position: relative;
+  }
   header .banner-nav .filter {
     display: block;
     cursor: pointer;
@@ -513,7 +516,7 @@ footer .footer-atas-kanan a {
     display: none;
     position: absolute;
     z-index: 5;
-    top: 115px;
+    top: 40px;
     left: 0px;
     padding: 10px;
     background-color: var(--coklat);
