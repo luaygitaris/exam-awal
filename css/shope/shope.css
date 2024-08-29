@@ -537,6 +537,10 @@ footer .footer-atas-kanan a {
   main h1 {
     font-size: large;
   }
+  main .our-product {
+    display: flex;
+    flex-wrap: wrap;
+  }
   main .our-product .product-content img {
     width: 200px;
     height: 230px;

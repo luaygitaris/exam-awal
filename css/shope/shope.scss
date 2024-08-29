@@ -564,6 +564,8 @@ footer {
       font-size: large;
     }
     .our-product {
+      display: flex;
+      flex-wrap: wrap;
       .product-content {
         img {
           width: 200px;
